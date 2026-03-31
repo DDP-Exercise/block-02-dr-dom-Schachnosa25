@@ -14,7 +14,7 @@
  *     For that reason, your little program should be written in a way, that it can
  *     scale with the size of the battlefield (3x3, 4x4, ..., nxn).
  *
- *     Schachnos a - 2026-03-15
+ *     Schachnosa - 2026-03-15
  *******************************************************/
 
 const X = "Savior (X)";
