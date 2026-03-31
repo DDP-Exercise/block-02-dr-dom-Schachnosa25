@@ -18,7 +18,7 @@
  *     is watching. We have to do it the right way.
  *     The JavaScript way!
  *
- *     Bratlsoft - 2026-03-15
+ *     Schachnosa - 2026-03-31
  *******************************************************/
 
 /**

@@ -27,44 +27,58 @@ const BATTLEFIELD =
         [X, X, X],
         [O, O, X],
     ];
-// const BATTLEFIELD =
-//     [
-//         [null, X, X],
-//         [X, O, null],
-//         [O, O, O],
-//     ];
-// const BATTLEFIELD =
-//     [
-//         [O, O, X],
-//         [X, O, X],
-//         [O, X, X],
-//     ];
-// const BATTLEFIELD =
-//     [
-//         [O, X, X],
-//         [X, O, X],
-//         [O, X, O],
-//     ];
-//
-// const BATTLEFIELD =
-//     [
-//         [O, X, X, X],
-//         [X, O, X, O],
-//         [O, X, O, X],
-//         [X, O, X, X],
-//     ];
-// const BATTLEFIELD =
-//     [
-//         [O, X, X, X, null],
-//         [X, O, X, O, O],
-//         [O, X, O, null,  X],
-//         [X, null, X, O, O],
-//         [X, null, O, X, O],
-//     ];
+const BATTLEFIELD =
+     [
+         [null, X, X],
+         [X, O, null],
+         [O, O, O],
+     ];
+ const BATTLEFIELD =
+     [
+        [O, O, X],
+         [X, O, X],
+         [O, X, X],
+     ];
+ const BATTLEFIELD =
+     [
+         [O, X, X],
+         [X, O, X],
+         [O, X, O],
+     ];
+
+ const BATTLEFIELD =
+     [
+         [O, X, X, X],
+         [X, O, X, O],
+         [O, X, O, X],
+         [X, O, X, X],
+     ];
+ const BATTLEFIELD =
+     [
+         [O, X, X, X, null],
+         [X, O, X, O, O],
+         [O, X, O, null,  X],
+         [X, null, X, O, O],
+         [X, null, O, X, O],
+     ];
 
 //TODO: Check if the battle is over, and if so, announce the winner!
 
 // Check Horizontal
+const size = BATTLEFIELD.length;
+
+let win = true;
+
+for (let j = 1; j < size; j++) {
+    if (BATTLEFIELD[i][j] !== first) {
+        win = false;
+    }
+}
+
+if (win && first !== null) {
+    console.log(fist + " wins horizontally! \u263A");
+}
+
 // Check Vertical
 // Check Main Diagonal
 // Check Anti Diagonal
